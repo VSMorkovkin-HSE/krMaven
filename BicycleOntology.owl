@@ -1,0 +1,582 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#"
+     xml:base="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#consistsOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#consistsOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Bicycle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Detail"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#hasWeight -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#hasWeight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Bicycle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Weight"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#releasedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#releasedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Bicycle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#ModelYear"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Bicycle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Bicycle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#BottomFeather -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#BottomFeather">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Frame"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Brake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Brake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#FrontBrake"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#RearBrake"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#BrakeCable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#BrakeCable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Brake"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#BrakeCableGuide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#BrakeCableGuide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Brake"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#BrakePad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#BrakePad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Brake"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Bushing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Bushing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Wheel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#CableProtection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#CableProtection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Frame"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#CableSheathRetainer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#CableSheathRetainer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Frame"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#CameraNipple -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#CameraNipple">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Wheel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Cassette -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Cassette">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Transmission"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Chain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Chain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Transmission"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#ConnectingRod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#ConnectingRod">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Transmission"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#ControlKnob -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#ControlKnob">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Rudder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#CoveringTheTopOfThe_BrakeHandles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#CoveringTheTopOfThe_BrakeHandles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Rudder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Detail -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Detail"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Eccentric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Eccentric">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Wheel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Fork -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Fork">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Detail"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#ForkBlade -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#ForkBlade">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Fork"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#ForkCrown -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#ForkCrown">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Fork"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Frame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Frame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Detail"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#FrontBrake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#FrontBrake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Fork"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#FrontCock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#FrontCock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Frame"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#FrontDerailleur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#FrontDerailleur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Transmission"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#FrontStar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#FrontStar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Transmission"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#FrontStarBolt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#FrontStarBolt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Transmission"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#FrontWheel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#FrontWheel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Detail"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Grips -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Grips">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Rudder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#ModelYear -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#ModelYear">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Bicycle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#RearBrake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#RearBrake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Frame"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#RearCock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#RearCock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Frame"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#RearDerailleur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#RearDerailleur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Transmission"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#RearWheel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#RearWheel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Detail"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Rim -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Rim">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Wheel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Roller -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Roller">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#RearDerailleur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Rudder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Rudder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Detail"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Saddle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Saddle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Detail"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#SaddleGuides -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#SaddleGuides">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Saddle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Seatpost -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Seatpost">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Saddle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#SeatpostClamp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#SeatpostClamp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Frame"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Spoke -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Spoke">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Wheel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#SpokeNipple -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#SpokeNipple">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Wheel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#SteeringColumn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#SteeringColumn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Rudder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#SteeringTube -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#SteeringTube">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Rudder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Stem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Stem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Rudder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Tire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Tire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Wheel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Transmission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Transmission">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Detail"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Treadle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Treadle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Transmission"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#UpperFeather -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#UpperFeather">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Frame"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Weight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Weight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Bicycle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Wheel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Wheel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#FrontWheel"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#RearWheel"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Navigator_970_D_29_V010 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Navigator_970_D_29_V010">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Bicycle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#SHIMANO_FD-TY300 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#SHIMANO_FD-TY300">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#FrontDerailleur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#SHIMANO_RD-TY300 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#SHIMANO_RD-TY300">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#RearDerailleur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Shimano_DEORE_RD-M5100 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Shimano_DEORE_RD-M5100">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#RearDerailleur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Shimano_DEORE_SL-M5100 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Shimano_DEORE_SL-M5100">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#ControlKnob"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Shimano_ST-EF500 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Shimano_ST-EF500">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#ControlKnob"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Stels_MTB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Stels_MTB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Saddle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Stels_Navigator_620_MD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Stels_Navigator_620_MD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Bicycle"/>
+        <consistsOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#SHIMANO_FD-TY300"/>
+        <consistsOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#SHIMANO_RD-TY300"/>
+        <consistsOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Stels_MTB"/>
+        <hasWeight rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#15.68"/>
+        <releasedIn rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#2020"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Tektro_Auriga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Tektro_Auriga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Brake"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#ZoomFork -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#ZoomFork">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Fork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#15.68 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#15.68">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Weight"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#2020 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#2020">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#ModelYear"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
