@@ -39,6 +39,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#madeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#madeOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Detail"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Material"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#releasedIn -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#releasedIn">
@@ -280,6 +289,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Material -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Material"/>
+    
+
+
     <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#ModelYear -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#ModelYear">
@@ -476,6 +491,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Aluminum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Aluminum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Material"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Navigator_970_D_29_V010 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Navigator_970_D_29_V010">
@@ -496,6 +519,15 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#SHIMANO_RD-TY300">
         <rdf:type rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#RearDerailleur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#SN620Frame -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#SN620Frame">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Frame"/>
+        <madeOf rdf:resource="http://www.semanticweb.org/vsmorkovkin/ontologies/2022/5/kr#Aluminum"/>
     </owl:NamedIndividual>
     
 
